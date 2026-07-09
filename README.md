@@ -1,7 +1,5 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Hi%20there,%20I'm%20Tejas%20Yadav!&fontSize=50&animation=fadeIn" />
-
-  <img src="https://readme-typing-svg.demolab.com/?lines=Cybersecurity+and Ethical+hacking+,+Full+stack+Development;Open+Source+Enthusiast;Student;%26+Web&font=Fira+Code&center=true&width=500&height=50&color=3b82f6&vCenter=true&size=22" />
   
   <p align="center">
     <i>"To be a STAR you must BURN"
