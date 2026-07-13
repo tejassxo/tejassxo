@@ -26,4 +26,14 @@
 ![](https://streak-stats.demolab.com/?user=tejassxo&theme=flag-india&hide_border=false)<br/>
 ![](https://github-readme-stats.shion.dev/api/top-langs/?username=tejassxo&theme=flag-india&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+
+<p align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=tejassxo&theme=github-compact&hide_border=true"/>
+
+</p>
+<p align="center">
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=tejassxo&theme=github_dark"/>
+
+</p>
