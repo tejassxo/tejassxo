@@ -245,32 +245,23 @@ Core Values: Courage, Integrity, Continuous Technical Supremacy
 
 ---
 
-### 🏆 Trophies & Achievements
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=tejassxo&theme=tokyonight&no-frame=true&no-reflection=true&column=4" alt="GitHub Trophies" />
-</div>
-
----
-
 ### 📊 GitHub Activity & Metrics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=tejassxo&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" height="175" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tejassxo&theme=tokyonight&hide_border=true&layout=compact" height="175" alt="Top Languages" />
+  <img src="https://github-readme-stats.shion.dev/api?username=tejassxo&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" height="175" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=tejassxo&theme=tokyonight&hide_border=true&layout=compact" height="175" alt="Top Languages" />
 </div>
 
 <br>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com/?username=tejassxo&theme=tokyonight&hide_border=true" alt="Streak Stats" />
+  <img src="https://streak-stats.demolab.com/?user=tejassxo&theme=tokyonight&hide_border=true" alt="Streak Stats" />
 </div>
 
 <br>
 
-<!-- Contribution Snake Animation -->
 <div align="center">
-  <img src="https://raw.githubusercontent.com/tejassxo/tejassxo/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Grid Snake" width="100%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=tejassxo&theme=2077" width="100%" alt="Profile Details" />
 </div>
 
 <br>
