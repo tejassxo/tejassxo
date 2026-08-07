@@ -1,12 +1,12 @@
 <div align="center">
-  <!-- Dynamic Multi-Color Animated Capsule Header -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f0ff,35:ff007f,70:7928ca,100:00ff88&height=240&section=header&text=M%20TEJAS%20YADAV&fontSize=52&fontColor=ffffff&animation=twinkling" width="100%" />
+  <!-- Dynamic Color Changing Capsule Header -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=240&section=header&text=M%20TEJAS%20YADAV&fontSize=52&fontColor=ffffff&animation=twinkling" width="100%" />
 
   <br>
 
   <!-- Dynamic Typing SVG Header -->
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&pause=1200&color=00F0FF&center=true&vCenter=true&width=700&lines=🛡️+Cybersecurity+%26+R%26D+Intern+%40+HackersGurukul;🤖+AI+Engineer+%40+CoreDefender+AI+(US);⚔️+Future+Indian+Army+Cyber+Officer;⚡+AI-Assisted+Dev+%7C+Vibe+Coder" alt="Typing SVG" />
+  <a href="https://readme-typing-svg.demolab.com/demo/">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&pause=1200&color=00F0FF&center=true&vCenter=true&width=700&lines=Cybersecurity+%26+R%26D+Intern+%40+HackersGurukul;AI+Engineer+%40+CoreDefender+AI+(US);Future+Indian+Army+Cyber+Officer;AI-Assisted+Dev+%7C+Vibe+Coder" alt="Typing SVG" />
   </a>
 
   <br><br>
