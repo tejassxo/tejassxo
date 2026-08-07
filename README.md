@@ -4,8 +4,13 @@
 
   <!-- Animated Typing Text -->
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00F0FF&center=true&vCenter=true&width=600&lines=Cybersecurity+%26+R%26D+Intern+%40+HackersGurukul;AI+Engineer+%40+CoreDefender+AI+(US);Future+Indian+Army+Cyber+Officer;AI-Assisted+Dev+%7C+Vibe+Coder" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00F0FF&center=true&vCenter=true&width=650&lines=Cybersecurity+%26+R%26D+Intern+%40+HackersGurukul;AI+Engineer+%40+CoreDefender+AI+(US);Future+Indian+Army+Cyber+Officer;AI-Assisted+Dev+%7C+Vibe+Coder" alt="Typing SVG" />
   </a>
+
+  <!-- Live Status Badge -->
+  <p align="center">
+    <img src="https://img.shields.io/badge/SYSTEM_STATUS-🟢_OPERATIONAL_IN_RECON_%26_AI_R%26D-00F0FF?style=for-the-badge&logo=gnubash&logoColor=black" alt="Status" />
+  </p>
 
   <p align="center">
     <i>"To be a STAR, you must BURN."</i>
@@ -32,6 +37,96 @@
 ```
 
 I'm a pre-final year **Computer Science Engineering (AI-ML)** student and dual-intern combining **AI-assisted rapid prototyping** with rigorous **cybersecurity analysis**. My mission is to build scalable, resilient platforms while honing high-level cyber intelligence skills for a future career as an **Army Cyber Officer**.
+
+---
+
+### 🖥️ Interactive Cyber Terminal Console
+
+*Click on any shell command below to execute & inspect system parameters:*
+
+<details>
+<summary><b><code>tejassxo@cyber-ops:~$ cat /etc/skills.conf</code></b> (Click to inspect VAPT & OSINT Workflow)</summary>
+<br>
+
+```ini
+[RECONNAISSANCE_&_OSINT]
+Target_Discovery = Sherlock, theHarvester, Maltego
+Subdomain_Enumeration = Gobuster, Amass
+Passive_Intel = Public Registries, WHOIS, DNS Enumeration
+
+[VULNERABILITY_ASSESSMENT]
+Web_App_Security = BurpSuite Professional, OWASP ZAP
+Network_Scanning = Nmap, Masscan
+Exploit_Validation = Ethical Proof-of-Concepts (PoCs)
+
+[METHODOLOGY]
+Framework = OWASP Top 10, PTES (Penetration Testing Execution Standard)
+Reporting = Vulnerability Impact Assessment & Remediation Guidance
+```
+</details>
+
+<details>
+<summary><b><code>tejassxo@cyber-ops:~$ ./run_ai_pipeline.sh</code></b> (Click to inspect AI Wearables Platform Architecture)</summary>
+<br>
+
+```bash
+[+] Initializing CoreDefender AI Wearables Pipeline...
+[+] Connecting Telemetry Ingestion Engine -> AWS Amplify & API Gateway
+[+] Processing Stream: Heart Rate, SpO2, Activity Vectors (TypeScript / React)
+[+] Running ML Anomaly Detection Model...
+[+] Status: PASS (0 Latency Spikes Detected)
+[+] Live Demo: https://main.d332sakcgle7gs.amplifyapp.com/
+```
+</details>
+
+<details>
+<summary><b><code>tejassxo@cyber-ops:~$ whoami --army-tgc</code></b> (Click to inspect Defense & Cyber Intelligence Vision)</summary>
+<br>
+
+```yaml
+Candidate: M Tejas Yadav
+Pathway: Indian Army Technical Graduate Course (TGC)
+Specialization: Cyber Intelligence, OSINT, & Crime Intel
+Objective: Serve as an Officer in the Corps of Signals / Cyber Warfare Cell
+Core Values: Courage, Integrity, Continuous Technical Supremacy
+```
+</details>
+
+---
+
+### ⚡ AI-Assisted ("Vibe Coding") vs Traditional Dev Comparison
+
+<table>
+  <thead>
+    <tr>
+      <th>Dimension</th>
+      <th>🐢 Traditional Software Dev</th>
+      <th>🚀 Tejas's AI-Assisted Workflow</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Prototyping Speed</b></td>
+      <td>Days spent on manual boilerplate & setup</td>
+      <td><b>Hours to production-ready UI/Cloud MVP</b></td>
+    </tr>
+    <tr>
+      <td><b>Security Integration</b></td>
+      <td>Vulnerability audits pushed to end of cycle</td>
+      <td><b>Continuous AI-assisted VAPT & code scanning</b></td>
+    </tr>
+    <tr>
+      <td><b>Iteration Velocity</b></td>
+      <td>Manual debugging & syntax lookup friction</td>
+      <td><b>LLM-guided refactoring & instant validation</b></td>
+    </tr>
+    <tr>
+      <td><b>Focus Area</b></td>
+      <td>Repetitive syntax & manual boilerplate</td>
+      <td><b>Architecture, User Experience & Cyber Resilience</b></td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
@@ -150,6 +245,14 @@ I'm a pre-final year **Computer Science Engineering (AI-ML)** student and dual-i
 
 ---
 
+### 🏆 Trophies & Achievements
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=tejassxo&theme=tokyonight&no-frame=true&no-reflection=true&column=4" alt="GitHub Trophies" />
+</div>
+
+---
+
 ### 📊 GitHub Activity & Metrics
 
 <div align="center">
@@ -161,6 +264,13 @@ I'm a pre-final year **Computer Science Engineering (AI-ML)** student and dual-i
 
 <div align="center">
   <img src="https://streak-stats.demolab.com/?username=tejassxo&theme=tokyonight&hide_border=true" alt="Streak Stats" />
+</div>
+
+<br>
+
+<!-- Contribution Snake Animation -->
+<div align="center">
+  <img src="https://raw.githubusercontent.com/tejassxo/tejassxo/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Grid Snake" width="100%" />
 </div>
 
 <br>
