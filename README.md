@@ -174,17 +174,19 @@ Foundational Values: Duty, Integrity, Continuous Technical Supremacy
 
 ---
 
+### Systems Lifecycle & Engineering Pipeline
+
+<div align="center">
+  <img src="./assets/pipeline.svg" alt="Systems Lifecycle & Pipeline" width="100%" />
+</div>
+
+---
+
 ### GitHub Metrics
 
 <div align="center">
   <img src="https://github-readme-stats.shion.dev/api?username=tejassxo&show_icons=true&bg_color=0d1117&text_color=94a3b8&icon_color=d4d4d8&title_color=ffffff&border_color=27272a&include_all_commits=true&count_private=true" height="165" alt="GitHub Stats" />
   <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=tejassxo&bg_color=0d1117&text_color=94a3b8&title_color=ffffff&border_color=27272a&layout=compact" height="165" alt="Top Languages" />
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/tejassxo/tejassxo/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake" width="100%" />
 </div>
 
 ---
