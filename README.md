@@ -3,19 +3,19 @@
 
   <br><br>
 
-  <!-- Clean Monochrome Social Links -->
+  <!-- Clean Monochrome Social Links (Pure Neutral #141414) -->
   <p align="center">
     <a href="https://mtejasyadav.vercel.app" target="_blank">
-      <img src="https://img.shields.io/badge/Portfolio-mtejasyadav.vercel.app-18181b?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio" />
+      <img src="https://img.shields.io/badge/Portfolio-mtejasyadav.vercel.app-141414?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio" />
     </a>
     <a href="https://linkedin.com/in/tejassxo" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-tejassxo-18181b?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
+      <img src="https://img.shields.io/badge/LinkedIn-tejassxo-141414?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
     </a>
     <a href="mailto:tejas.yadav3453@gmail.com">
-      <img src="https://img.shields.io/badge/Email-tejas.yadav3453%40gmail.com-18181b?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
+      <img src="https://img.shields.io/badge/Email-tejas.yadav3453%40gmail.com-141414?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
     </a>
     <a href="https://discord.gg/tejassxo" target="_blank">
-      <img src="https://img.shields.io/badge/Discord-tejassxo-18181b?style=flat-square&logo=discord&logoColor=white" alt="Discord" />
+      <img src="https://img.shields.io/badge/Discord-tejassxo-141414?style=flat-square&logo=discord&logoColor=white" alt="Discord" />
     </a>
   </p>
 </div>
@@ -24,7 +24,7 @@
 
 ### Executive Overview
 
-Pre-final year **Computer Science & Engineering (AI & ML)** student bridging **offensive cybersecurity (VAPT & OSINT)** with **cloud-native AI systems engineering**. Actively conducting applied security research, developing real-time telemetry streaming platforms, and preparing for commissioning as a Cyber Intelligence Officer through the **Indian Army Technical Graduate Course (TGC)**.
+Pre-final year **Computer Science & Engineering (AI & ML)** student combining **offensive cybersecurity (VAPT & OSINT)** with **cloud-native AI systems engineering**. Actively conducting applied security research, developing real-time telemetry streaming platforms, and preparing for commissioning as a Cyber Intelligence Officer through the **Indian Army Technical Graduate Course (TGC)**.
 
 ---
 
@@ -37,7 +37,7 @@ Pre-final year **Computer Science & Engineering (AI & ML)** student bridging **o
       <p><b>Cybersecurity &amp; R&amp;D Intern</b></p>
       <ul>
         <li>Execute Vulnerability Assessment &amp; Penetration Testing (VAPT) across web and network targets.</li>
-        <li>Perform Open-Source Intelligence (OSINT) workflows and attack surface mapping.</li>
+        <li>Conduct Open-Source Intelligence (OSINT) workflows, reconnaissance, and attack surface enumeration.</li>
         <li>Mentored under Prabhudas Thanneeru (CEO &amp; State Director, CRAI India).</li>
       </ul>
       <p><sub><code>Kali Linux</code> · <code>BurpSuite Pro</code> · <code>Nmap</code> · <code>OWASP Top 10</code> · <code>PTES</code></sub></p>
@@ -46,27 +46,15 @@ Pre-final year **Computer Science & Engineering (AI & ML)** student bridging **o
       <h4>🤖 CoreDefender AI (US)</h4>
       <p><b>AI Systems Engineering Intern</b></p>
       <ul>
-        <li>Engineered real-time telemetry streaming platform for medical/health-tech wearable devices.</li>
-        <li>Constructed serverless data ingestion pipelines for biometric vectors (Heart Rate, SpO2).</li>
-        <li>Shipped cloud-native frontend and edge services on AWS and React/TypeScript.</li>
+        <li>Engineered real-time telemetry streaming platform for medical and health-tech wearable devices.</li>
+        <li>Built serverless data ingestion pipelines for biometric vectors (Heart Rate, SpO2).</li>
+        <li>Deployed cloud-native frontend and edge services on AWS and React/TypeScript.</li>
       </ul>
       <p><sub><code>React</code> · <code>TypeScript</code> · <code>AWS Amplify</code> · <code>API Gateway</code> · <code>Cloud Telemetry</code></sub></p>
       <p><a href="https://main.d332sakcgle7gs.amplifyapp.com/"><b>Explore Live Platform →</b></a></p>
     </td>
   </tr>
 </table>
-
----
-
-### Mission & Trajectory
-
-```yaml
-Candidate: M Tejas Yadav
-Path: Indian Army Technical Graduate Course (TGC)
-Specialization: Cyber Operations, Signals Intelligence & Defense Systems
-Objective: Commission as an Officer in the Corps of Signals / Defence Cyber Agency (DCA)
-Foundational Values: Duty, Integrity, Continuous Technical Supremacy
-```
 
 ---
 
@@ -78,9 +66,9 @@ Foundational Values: Duty, Integrity, Continuous Technical Supremacy
       <h4>🩺 CoreDefender AI Wearables</h4>
       <p>Production-grade health-tech platform for live wearable telemetry ingestion, real-time biometric analysis, and anomaly visualization.</p>
       <p>
-        <img src="https://img.shields.io/badge/React-18181b?style=flat-square&logo=react&logoColor=white" />
-        <img src="https://img.shields.io/badge/TypeScript-18181b?style=flat-square&logo=typescript&logoColor=white" />
-        <img src="https://img.shields.io/badge/AWS_Amplify-18181b?style=flat-square&logo=amazonaws&logoColor=white" />
+        <img src="https://img.shields.io/badge/React-141414?style=flat-square&logo=react&logoColor=white" />
+        <img src="https://img.shields.io/badge/TypeScript-141414?style=flat-square&logo=typescript&logoColor=white" />
+        <img src="https://img.shields.io/badge/AWS_Amplify-141414?style=flat-square&logo=amazonaws&logoColor=white" />
       </p>
       <p><a href="https://main.d332sakcgle7gs.amplifyapp.com/"><b>Live Application →</b></a></p>
     </td>
@@ -88,9 +76,9 @@ Foundational Values: Duty, Integrity, Continuous Technical Supremacy
       <h4>🛡️ ShieldScan Professional</h4>
       <p>Asynchronous network reconnaissance and port scanning utility featuring a clean PyQt5 interface, stealth packet delivery, and custom rate limiting.</p>
       <p>
-        <img src="https://img.shields.io/badge/Python-18181b?style=flat-square&logo=python&logoColor=white" />
-        <img src="https://img.shields.io/badge/PyQt5-18181b?style=flat-square&logo=qt&logoColor=white" />
-        <img src="https://img.shields.io/badge/VAPT_Engine-18181b?style=flat-square" />
+        <img src="https://img.shields.io/badge/Python-141414?style=flat-square&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/PyQt5-141414?style=flat-square&logo=qt&logoColor=white" />
+        <img src="https://img.shields.io/badge/VAPT_Engine-141414?style=flat-square" />
       </p>
       <p><a href="https://github.com/tejassxo/Sheild-Scan"><b>Repository &amp; Architecture →</b></a></p>
     </td>
@@ -100,9 +88,9 @@ Foundational Values: Duty, Integrity, Continuous Technical Supremacy
       <h4>🚨 CrimeIntel Master Repository</h4>
       <p>National Cyber Threat Assessment initiative tracking cybercrime patterns, attack vectors, and regional incident metrics across India (2020–2026).</p>
       <p>
-        <img src="https://img.shields.io/badge/Cyber_Threat_Intel-18181b?style=flat-square" />
-        <img src="https://img.shields.io/badge/OSINT-18181b?style=flat-square" />
-        <img src="https://img.shields.io/badge/Data_Modeling-18181b?style=flat-square" />
+        <img src="https://img.shields.io/badge/Cyber_Threat_Intel-141414?style=flat-square" />
+        <img src="https://img.shields.io/badge/OSINT-141414?style=flat-square" />
+        <img src="https://img.shields.io/badge/Data_Modeling-141414?style=flat-square" />
       </p>
       <p><a href="https://github.com/tejassxo/CrimeIntel"><b>Repository &amp; Threat Data →</b></a></p>
     </td>
@@ -110,9 +98,9 @@ Foundational Values: Duty, Integrity, Continuous Technical Supremacy
       <h4>🌐 Interactive 3D Portfolio</h4>
       <p>Flagship engineering portfolio with fluid motion choreography, live telemetry simulation, dynamic theme responsiveness, and WebGL elements.</p>
       <p>
-        <img src="https://img.shields.io/badge/Next.js-18181b?style=flat-square&logo=nextdotjs&logoColor=white" />
-        <img src="https://img.shields.io/badge/TypeScript-18181b?style=flat-square&logo=typescript&logoColor=white" />
-        <img src="https://img.shields.io/badge/Three.js-18181b?style=flat-square&logo=threedotjs&logoColor=white" />
+        <img src="https://img.shields.io/badge/Next.js-141414?style=flat-square&logo=nextdotjs&logoColor=white" />
+        <img src="https://img.shields.io/badge/TypeScript-141414?style=flat-square&logo=typescript&logoColor=white" />
+        <img src="https://img.shields.io/badge/Three.js-141414?style=flat-square&logo=threedotjs&logoColor=white" />
       </p>
       <p><a href="https://mtejasyadav.vercel.app"><b>Launch Studio (mtejasyadav.vercel.app) →</b></a></p>
     </td>
@@ -120,7 +108,7 @@ Foundational Values: Duty, Integrity, Continuous Technical Supremacy
 </table>
 
 <details>
-<summary><b>View Additional Works &amp; Experiments</b></summary>
+<summary><b>View Additional Works &amp; Open Source</b></summary>
 <br>
 
 | Project | Description | Stack | Links |
@@ -163,31 +151,38 @@ Foundational Values: Duty, Integrity, Continuous Technical Supremacy
 <br>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Kali_Linux-18181b?style=flat-square&logo=kali-linux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-18181b?style=flat-square&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-18181b?style=flat-square&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-18181b?style=flat-square&logo=react&logoColor=white" />
-  <img src="https://img.shields.io/badge/Next.js-18181b?style=flat-square&logo=nextdotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/AWS-18181b?style=flat-square&logo=amazonaws&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-18181b?style=flat-square&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kali_Linux-141414?style=flat-square&logo=kali-linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-141414?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-141414?style=flat-square&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-141414?style=flat-square&logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/Next.js-141414?style=flat-square&logo=nextdotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/AWS-141414?style=flat-square&logo=amazonaws&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-141414?style=flat-square&logo=git&logoColor=white" />
 </p>
 
 ---
 
-### Systems Lifecycle & Engineering Pipeline
+### 🖥️ Systems & Defense Console
 
-<div align="center">
-  <img src="./assets/pipeline.svg" alt="Systems Lifecycle & Pipeline" width="100%" />
-</div>
-
----
-
-### GitHub Metrics
-
-<div align="center">
-  <img src="https://github-readme-stats.shion.dev/api?username=tejassxo&show_icons=true&bg_color=0d1117&text_color=94a3b8&icon_color=d4d4d8&title_color=ffffff&border_color=27272a&include_all_commits=true&count_private=true" height="165" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=tejassxo&bg_color=0d1117&text_color=94a3b8&title_color=ffffff&border_color=27272a&layout=compact" height="165" alt="Top Languages" />
-</div>
+```text
+┌── [ tejassxo@workstation ] ────────────────────────────────────────────────────────┐
+│                                                                                    │
+│   OPERATIONAL PROFILE                                                              │
+│   ├── Target       : Indian Army TGC (Cyber Intelligence & Corps of Signals)       │
+│   ├── Discipline   : Computer Science & Engineering (AI & Machine Learning)        │
+│   ├── Mission      : Serve as a Commissioned Cyber Intelligence Officer            │
+│   │                                                                                │
+│   APPLIED LABS & INDUSTRY                                                          │
+│   ├── HackersGurukul    -> Vulnerability Assessment, OSINT & Network Pentesting    │
+│   └── CoreDefender AI   -> Real-time Health Telemetry Streaming (React / AWS)      │
+│                                                                                    │
+│   ARSENAL & METHODOLOGIES                                                          │
+│   ├── Offensive Sec     -> BurpSuite Pro · Kali Linux · Nmap · OWASP Top 10 · PTES │
+│   ├── Cloud & Infra     -> AWS Amplify · REST APIs · Serverless Ingestion · SQL    │
+│   └── Software Eng      -> Python · TypeScript · React · Next.js · Node.js         │
+│                                                                                    │
+└────────────────────────────────────────────────────────────── [ STATUS: ARMED ] ──┘
+```
 
 ---
 
