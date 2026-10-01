@@ -1,116 +1,200 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" width="100%" height="100%">
   <defs>
-    <!-- True Neutral Monochrome Background -->
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#050505" />
-      <stop offset="50%" stop-color="#0d0d0d" />
-      <stop offset="100%" stop-color="#080808" />
+    <!-- Deep OLED Black Background Gradient -->
+    <linearGradient id="terminalBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030708" />
+      <stop offset="50%" stop-color="#070d0e" />
+      <stop offset="100%" stop-color="#020405" />
     </linearGradient>
 
-    <!-- Subtle Pure White Ambient Glow -->
-    <radialGradient id="centerGlow" cx="50%" cy="40%" r="50%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.04" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
-    </radialGradient>
-
-    <!-- Pure Monochrome Hairline -->
-    <linearGradient id="hairline" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#262626" stop-opacity="0" />
-      <stop offset="30%" stop-color="#525252" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#a3a3a3" stop-opacity="1" />
-      <stop offset="70%" stop-color="#525252" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#262626" stop-opacity="0" />
+    <!-- Phosphor Green Accent Gradient -->
+    <linearGradient id="neonGreenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#15803d" stop-opacity="0" />
+      <stop offset="25%" stop-color="#22c55e" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#4ade80" stop-opacity="1" />
+      <stop offset="75%" stop-color="#22c55e" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#15803d" stop-opacity="0" />
     </linearGradient>
 
-    <!-- Neutral Grid Pattern (Zero Blue / Zero Purple) -->
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#222222" stroke-width="0.75" stroke-opacity="0.5" />
-      <circle cx="40" cy="0" r="1" fill="#444444" fill-opacity="0.5" />
+    <!-- Tactical Radar Grid -->
+    <pattern id="tacticalGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#13241b" stroke-width="0.7" stroke-opacity="0.6" />
+      <circle cx="40" cy="0" r="1.2" fill="#22c55e" fill-opacity="0.3" />
     </pattern>
+
+    <!-- Scanline Texture -->
+    <pattern id="scanlines" width="100" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100" y2="0" stroke="#000000" stroke-width="1.2" stroke-opacity="0.35" />
+    </pattern>
+
+    <!-- Ambient Phosphor Glow -->
+    <radialGradient id="phosphorGlow" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.08" />
+      <stop offset="60%" stop-color="#00f5ff" stop-opacity="0.02" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
   </defs>
 
   <style>
-    .title {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif;
-      font-weight: 800;
-      font-size: 46px;
-      letter-spacing: -0.5px;
-      fill: #ffffff;
+    @keyframes pulseFade {
+      0%, 100% { opacity: 0.35; transform: scale(0.98); }
+      50% { opacity: 1; transform: scale(1.02); }
     }
-    .subtitle {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif;
-      font-weight: 400;
-      font-size: 17px;
-      letter-spacing: 0.2px;
-      fill: #a3a3a3;
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
     }
-    .badge-text {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif;
-      font-weight: 600;
+    @keyframes radarScan {
+      0% { transform: translateY(-350px); }
+      100% { transform: translateY(350px); }
+    }
+
+    .pulse {
+      animation: pulseFade 2.8s ease-in-out infinite;
+    }
+    .cursor-blink {
+      animation: blink 1s infinite;
+    }
+
+    .term-header {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
       font-size: 11px;
       letter-spacing: 1.5px;
-      fill: #e5e5e5;
+      fill: #86efac;
+    }
+    .term-meta {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 1px;
+      fill: #4ade80;
+      opacity: 0.75;
+    }
+    .title-main {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif;
+      font-weight: 900;
+      font-size: 48px;
+      letter-spacing: 2px;
+      fill: #ffffff;
+    }
+    .title-highlight {
+      fill: #4ade80;
+    }
+    .subtitle {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 13px;
+      letter-spacing: 1.8px;
+      fill: #a3e635;
       text-transform: uppercase;
     }
-    .meta-text {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
-      font-size: 12px;
-      letter-spacing: 0.5px;
-      fill: #737373;
+    .card-label {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 10px;
+      letter-spacing: 1.2px;
+      font-weight: 700;
+      fill: #6ee7b7;
+      text-transform: uppercase;
     }
-    .meta-val {
-      fill: #e5e5e5;
+    .card-value {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif;
+      font-size: 12px;
       font-weight: 600;
+      letter-spacing: 0.3px;
+      fill: #f0fdf4;
+    }
+    .hud-bracket {
+      fill: #15803d;
+      font-family: ui-monospace, monospace;
+      font-size: 14px;
+      font-weight: 700;
     }
   </style>
 
   <!-- Container Box -->
-  <rect width="1198" height="318" x="1" y="1" rx="16" fill="url(#bgGradient)" stroke="#262626" stroke-width="1.2" />
-  
-  <!-- Neutral Grid Overlay -->
-  <rect width="1198" height="318" x="1" y="1" rx="16" fill="url(#grid)" />
+  <rect width="1198" height="348" x="1" y="1" rx="14" fill="url(#terminalBg)" stroke="#166534" stroke-width="1.2" />
 
-  <!-- Center Ambient Glow -->
-  <rect width="1198" height="318" x="1" y="1" rx="16" fill="url(#centerGlow)" />
+  <!-- Tactical Grid Layer -->
+  <rect width="1198" height="348" x="1" y="1" rx="14" fill="url(#tacticalGrid)" />
 
-  <!-- Top Accent Hairline -->
-  <line x1="150" y1="1" x2="1050" y2="1" stroke="url(#hairline)" stroke-width="1.5" />
+  <!-- Phosphor Radial Glow -->
+  <rect width="1198" height="348" x="1" y="1" rx="14" fill="url(#phosphorGlow)" />
 
-  <!-- Status Pill -->
-  <g transform="translate(600, 52)">
-    <rect x="-115" y="-14" width="230" height="28" rx="14" fill="#141414" stroke="#333333" stroke-width="1" />
-    <circle cx="-90" cy="0" r="3.5" fill="#ffffff" />
-    <circle cx="-90" cy="0" r="7" fill="none" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.2" />
-    <text x="10" y="4" text-anchor="middle" class="badge-text">STATUS · ONLINE &amp; ACTIVE</text>
-  </g>
+  <!-- Top Accent Laser Beam -->
+  <line x1="80" y1="1" x2="1120" y2="1" stroke="url(#neonGreenGrad)" stroke-width="2" />
 
-  <!-- Main Headline -->
-  <text x="600" y="135" text-anchor="middle" class="title">M TEJAS YADAV</text>
+  <!-- ==================== TERMINAL TITLE BAR ==================== -->
+  <g transform="translate(24, 28)">
+    <!-- Terminal Window Controls -->
+    <circle cx="8" cy="0" r="5" fill="#ef4444" fill-opacity="0.85" />
+    <circle cx="26" cy="0" r="5" fill="#f59e0b" fill-opacity="0.85" />
+    <circle cx="44" cy="0" r="5" fill="#22c55e" fill-opacity="0.85" />
 
-  <!-- Subtitle -->
-  <text x="600" y="175" text-anchor="middle" class="subtitle">AI Systems Engineering  ·  Cybersecurity &amp; VAPT  ·  Indian Army TGC Aspirant</text>
+    <!-- Terminal Prompt & Path -->
+    <text x="68" y="4" class="term-header">tejassxo@corps-of-signals:~# <tspan fill="#ffffff">sys_init --directive=DEFENSE_INTEL</tspan><tspan class="cursor-blink" fill="#22c55e">_</tspan></text>
 
-  <!-- Divider Line -->
-  <line x1="250" y1="215" x2="950" y2="215" stroke="#262626" stroke-width="1" />
-
-  <!-- Telemetry / Core Focus Items -->
-  <g transform="translate(600, 255)">
-    <!-- Item 1 -->
-    <g transform="translate(-360, 0)">
-      <circle cx="-12" cy="-4" r="3" fill="#737373" />
-      <text x="0" y="0" class="meta-text">EDUCATION: <tspan class="meta-val">B.Tech CSE (AI &amp; ML)</tspan></text>
-    </g>
-
-    <!-- Item 2 -->
-    <g transform="translate(0, 0)">
-      <circle cx="-12" cy="-4" r="3" fill="#737373" />
-      <text x="0" y="0" text-anchor="middle" class="meta-text">EXPERIENCE: <tspan class="meta-val">HackersGurukul × CoreDefender AI</tspan></text>
-    </g>
-
-    <!-- Item 3 -->
-    <g transform="translate(360, 0)">
-      <circle cx="-12" cy="-4" r="3" fill="#737373" />
-      <text x="0" y="0" text-anchor="end" class="meta-text">MISSION: <tspan class="meta-val">Army Cyber Intelligence</tspan></text>
+    <!-- Right HUD Telemetry Status -->
+    <g transform="translate(1148, 0)">
+      <circle cx="-160" cy="0" r="3.5" fill="#22c55e" />
+      <circle cx="-160" cy="0" r="7" fill="none" stroke="#22c55e" stroke-width="1" class="pulse" />
+      <text x="-144" y="4" class="term-meta">ENC: AES-256 // CLEARANCE: DECLASSIFIED</text>
     </g>
   </g>
+
+  <!-- Hairline Divider -->
+  <line x1="20" y1="46" x2="1180" y2="46" stroke="#14532d" stroke-width="0.8" stroke-opacity="0.7" />
+
+  <!-- ==================== STATUS PILL ==================== -->
+  <g transform="translate(600, 84)">
+    <rect x="-175" y="-14" width="350" height="28" rx="6" fill="#042013" stroke="#22c55e" stroke-width="1" />
+    <circle cx="-150" cy="0" r="3.5" fill="#4ade80" />
+    <circle cx="-150" cy="0" r="7" fill="none" stroke="#4ade80" stroke-width="1" class="pulse" />
+    <text x="10" y="4" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11px" font-weight="700" letter-spacing="1.5px" fill="#86efac">
+      OPERATIONAL PROFILE // LEVEL-01 READY
+    </text>
+  </g>
+
+  <!-- ==================== MAIN CALLSIGN & NAME ==================== -->
+  <text x="600" y="152" text-anchor="middle" class="title-main">
+    M TEJAS <tspan class="title-highlight">YADAV</tspan>
+  </text>
+
+  <!-- Subtitle / Mission Directive -->
+  <text x="600" y="188" text-anchor="middle" class="subtitle">
+    Offensive Cybersecurity (VAPT) · Cloud-Native AI Telemetry · Indian Army TGC Aspirant
+  </text>
+
+  <!-- Tactical Crosshair Separator -->
+  <g transform="translate(600, 218)">
+    <line x1="-380" y1="0" x2="-30" y2="0" stroke="#166534" stroke-width="1" />
+    <text x="0" y="4" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11px" fill="#4ade80" letter-spacing="2px">
+      [ SYS.ID: TGC-CYBER-OPS ]
+    </text>
+    <line x1="30" y1="0" x2="380" y2="0" stroke="#166534" stroke-width="1" />
+  </g>
+
+  <!-- ==================== 3 HUD TELEMETRY MODULES ==================== -->
+  <g transform="translate(600, 280)">
+    <!-- MODULE 01: ACADEMICS & TRAJECTORY -->
+    <g transform="translate(-380, 0)">
+      <rect x="-10" y="-28" width="240" height="52" rx="6" fill="#051c11" stroke="#166534" stroke-width="1" />
+      <text x="8" y="-10" class="card-label">01 // TRAJECTORY &amp; CORPS</text>
+      <text x="8" y="12" class="card-value">Indian Army TGC (Signals)</text>
+    </g>
+
+    <!-- MODULE 02: SPECIALIZATION -->
+    <g transform="translate(-110, 0)">
+      <rect x="-10" y="-28" width="240" height="52" rx="6" fill="#051c11" stroke="#166534" stroke-width="1" />
+      <text x="8" y="-10" class="card-label">02 // RESEARCH &amp; VAPT</text>
+      <text x="8" y="12" class="card-value">Offensive VAPT &amp; OSINT</text>
+    </g>
+
+    <!-- MODULE 03: CLOUD & AI -->
+    <g transform="translate(160, 0)">
+      <rect x="-10" y="-28" width="240" height="52" rx="6" fill="#051c11" stroke="#166534" stroke-width="1" />
+      <text x="8" y="-10" class="card-label">03 // SYSTEMS &amp; TELEMETRY</text>
+      <text x="8" y="12" class="card-value">Cloud-Native AI Telemetry</text>
+    </g>
+  </g>
+
+  <!-- Scanline Overlay for True CRT/Terminal Monitor Texture -->
+  <rect width="1198" height="348" x="1" y="1" rx="14" fill="url(#scanlines)" pointer-events="none" />
 </svg>
