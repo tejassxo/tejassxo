@@ -1,62 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 370" width="100%" height="100%">
   <defs>
-    <!-- Apple Minimal Dot Matrix (Subtle Neutral Gray, Zero Green, Zero Neon) -->
+    <!-- Apple Minimal Dot Matrix (Zero Green, Zero Neon) -->
     <pattern id="appleDotGrid" width="32" height="32" patternUnits="userSpaceOnUse">
       <circle cx="2" cy="2" r="0.75" fill="#2c2c2e" />
     </pattern>
   </defs>
 
   <style>
-    /* GSAP Fluid Easing Equivalents: Power4.out / cubic-bezier(0.16, 1, 0.3, 1) */
+    /* GSAP Fluid Easing (Power4.out: cubic-bezier(0.16, 1, 0.3, 1)) */
     @keyframes gsapRevealUp {
-      0% {
-        opacity: 0;
-        transform: translateY(12px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      0% { opacity: 0; transform: translateY(12px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
-
     @keyframes appleBreathing {
       0%, 100% { opacity: 0.35; transform: scale(0.96); }
       50% { opacity: 0.9; transform: scale(1.04); }
     }
-
-    @keyframes gsapStagger1 {
+    @keyframes gsapStagger {
       0% { opacity: 0; transform: translateY(8px); }
       100% { opacity: 1; transform: translateY(0); }
     }
 
     .gsap-hero {
-      animation: gsapRevealUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+      animation: gsapRevealUp 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
     }
-
     .gsap-pill {
       animation: gsapRevealUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
       animation-delay: 0.1s;
     }
-
-    .gsap-card-1 {
-      animation: gsapStagger1 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
-      animation-delay: 0.25s;
-    }
-    .gsap-card-2 {
-      animation: gsapStagger1 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
-      animation-delay: 0.35s;
-    }
-    .gsap-card-3 {
-      animation: gsapStagger1 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
-      animation-delay: 0.45s;
-    }
+    .gsap-tile-1 { animation: gsapStagger 1s cubic-bezier(0.16, 1, 0.3, 1) both; animation-delay: 0.2s; }
+    .gsap-tile-2 { animation: gsapStagger 1s cubic-bezier(0.16, 1, 0.3, 1) both; animation-delay: 0.28s; }
+    .gsap-tile-3 { animation: gsapStagger 1s cubic-bezier(0.16, 1, 0.3, 1) both; animation-delay: 0.36s; }
+    .gsap-tile-4 { animation: gsapStagger 1s cubic-bezier(0.16, 1, 0.3, 1) both; animation-delay: 0.44s; }
 
     .apple-pulse {
       animation: appleBreathing 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       transform-origin: center;
     }
 
-    /* Apple SF Pro Typography System */
     .apple-eyebrow {
       font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
       font-size: 11px;
@@ -65,7 +46,6 @@
       fill: #86868b;
       text-transform: uppercase;
     }
-
     .apple-headline {
       font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
       font-size: 46px;
@@ -73,12 +53,10 @@
       letter-spacing: -0.8px;
       fill: #f5f5f7;
     }
-
     .apple-headline-silver {
       fill: #86868b;
       font-weight: 400;
     }
-
     .apple-subhead {
       font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
       font-size: 14px;
@@ -87,7 +65,6 @@
       line-height: 20px;
       fill: #a1a1a6;
     }
-
     .bento-label {
       font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
       font-size: 10px;
@@ -96,68 +73,81 @@
       fill: #86868b;
       text-transform: uppercase;
     }
-
-    .bento-value {
+    .bento-val {
       font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 600;
       letter-spacing: -0.2px;
       fill: #f5f5f7;
     }
+    .bento-sub {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
+      font-size: 10px;
+      fill: #6e6e73;
+    }
   </style>
 
   <!-- Container Box: Apple Space Black Surface -->
-  <rect width="1198" height="348" x="1" y="1" rx="18" fill="#000000" stroke="#2c2c2e" stroke-width="1.2" />
-
-  <!-- Subtle Neutral Dot Grid -->
-  <rect width="1198" height="348" x="1" y="1" rx="18" fill="url(#appleDotGrid)" />
+  <rect width="1198" height="368" x="1" y="1" rx="18" fill="#000000" stroke="#2c2c2e" stroke-width="1.2" />
+  <rect width="1198" height="368" x="1" y="1" rx="18" fill="url(#appleDotGrid)" />
 
   <!-- Top Apple Status Pill Bar -->
-  <g class="gsap-pill" transform="translate(600, 48)">
-    <rect x="-160" y="-14" width="320" height="28" rx="14" fill="#161618" stroke="#333336" stroke-width="1" />
-    <circle cx="-136" cy="0" r="3.5" fill="#f5f5f7" />
-    <circle cx="-136" cy="0" r="7" fill="none" stroke="#86868b" stroke-width="1" class="apple-pulse" />
+  <g class="gsap-pill" transform="translate(600, 46)">
+    <rect x="-185" y="-14" width="370" height="28" rx="14" fill="#161618" stroke="#333336" stroke-width="1" />
+    <circle cx="-160" cy="0" r="3.5" fill="#f5f5f7" />
+    <circle cx="-160" cy="0" r="7" fill="none" stroke="#86868b" stroke-width="1" class="apple-pulse" />
     <text x="12" y="4" text-anchor="middle" class="apple-eyebrow">
-      SYSTEMS &amp; DEFENSE INTELLIGENCE
+      DEFENSE CYBER INTELLIGENCE &amp; AI SYSTEMS
     </text>
   </g>
 
-  <!-- Main Headline (Apple Keynote Style) -->
+  <!-- Main Headline -->
   <g class="gsap-hero">
-    <text x="600" y="126" text-anchor="middle" class="apple-headline">
+    <text x="600" y="122" text-anchor="middle" class="apple-headline">
       M Tejas Yadav <tspan class="apple-headline-silver">/ tejassxo</tspan>
     </text>
 
     <!-- Subheadline -->
-    <text x="600" y="162" text-anchor="middle" class="apple-subhead">
+    <text x="600" y="156" text-anchor="middle" class="apple-subhead">
       Offensive Cybersecurity (VAPT) · Cloud-Native AI Telemetry · Indian Army TGC Aspirant
     </text>
   </g>
 
   <!-- Hairline Divider -->
-  <line x1="220" y1="196" x2="980" y2="196" stroke="#242426" stroke-width="1" />
+  <line x1="120" y1="188" x2="1080" y2="188" stroke="#242426" stroke-width="1" />
 
-  <!-- ==================== APPLE BENTO TELEMETRY TILES ==================== -->
+  <!-- ==================== 4 APPLE BENTO TELEMETRY TILES ==================== -->
   <g transform="translate(600, 260)">
     <!-- TILE 01: TRAJECTORY -->
-    <g class="gsap-card-1" transform="translate(-370, 0)">
-      <rect x="-10" y="-36" width="234" height="68" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
-      <text x="14" y="-14" class="bento-label">TRAJECTORY &amp; CORPS</text>
-      <text x="14" y="12" class="bento-value">Indian Army TGC (Signals)</text>
+    <g class="gsap-tile-1" transform="translate(-520, 0)">
+      <rect x="-10" y="-50" width="244" height="84" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
+      <text x="14" y="-28" class="bento-label">01 // TRAJECTORY &amp; CORPS</text>
+      <text x="14" y="-6" class="bento-val">Indian Army TGC</text>
+      <text x="14" y="16" class="bento-sub">Corps of Signals / Defense Intel</text>
     </g>
 
     <!-- TILE 02: RESEARCH & VAPT -->
-    <g class="gsap-card-2" transform="translate(-107, 0)">
-      <rect x="-10" y="-36" width="234" height="68" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
-      <text x="14" y="-14" class="bento-label">RESEARCH &amp; VAPT</text>
-      <text x="14" y="12" class="bento-value">Offensive VAPT &amp; OSINT</text>
+    <g class="gsap-tile-2" transform="translate(-255, 0)">
+      <rect x="-10" y="-50" width="244" height="84" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
+      <text x="14" y="-28" class="bento-label">02 // RESEARCH &amp; VAPT</text>
+      <text x="14" y="-6" class="bento-val">Offensive VAPT &amp; OSINT</text>
+      <text x="14" y="16" class="bento-sub">HackersGurukul (CRAI Mentored)</text>
     </g>
 
     <!-- TILE 03: CLOUD & SYSTEMS -->
-    <g class="gsap-card-3" transform="translate(156, 0)">
-      <rect x="-10" y="-36" width="234" height="68" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
-      <text x="14" y="-14" class="bento-label">SYSTEMS &amp; TELEMETRY</text>
-      <text x="14" y="12" class="bento-value">Cloud-Native AI Telemetry</text>
+    <g class="gsap-tile-3" transform="translate(10, 0)">
+      <rect x="-10" y="-50" width="244" height="84" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
+      <text x="14" y="-28" class="bento-label">03 // SYSTEMS &amp; TELEMETRY</text>
+      <text x="14" y="-6" class="bento-val">Real-Time Biometrics</text>
+      <text x="14" y="16" class="bento-sub">CoreDefender AI (US) · AWS IoT</text>
+    </g>
+
+    <!-- TILE 04: ACADEMICS -->
+    <g class="gsap-tile-4" transform="translate(275, 0)">
+      <rect x="-10" y="-50" width="244" height="84" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
+      <text x="14" y="-28" class="bento-label">04 // DISCIPLINE &amp; DEGREE</text>
+      <text x="14" y="-6" class="bento-val">B.Tech CSE (AI &amp; ML)</text>
+      <text x="14" y="16" class="bento-sub">Pre-Final Year Engineering</text>
     </g>
   </g>
 </svg>
