@@ -1,59 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" width="100%" height="100%">
   <defs>
-    <!-- Deep OLED Black Background Gradient -->
-    <linearGradient id="terminalBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#030708" />
-      <stop offset="50%" stop-color="#070d0e" />
-      <stop offset="100%" stop-color="#020405" />
-    </linearGradient>
-
-    <!-- Phosphor Green Accent Gradient -->
-    <linearGradient id="neonGreenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#15803d" stop-opacity="0" />
-      <stop offset="25%" stop-color="#22c55e" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#4ade80" stop-opacity="1" />
-      <stop offset="75%" stop-color="#22c55e" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#15803d" stop-opacity="0" />
-    </linearGradient>
-
-    <!-- Tactical Radar Grid -->
+    <!-- Tactical Grid Pattern (Pure Solid Lines & Dots, Zero Gradient) -->
     <pattern id="tacticalGrid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#13241b" stroke-width="0.7" stroke-opacity="0.6" />
-      <circle cx="40" cy="0" r="1.2" fill="#22c55e" fill-opacity="0.3" />
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0e1f14" stroke-width="0.8" />
+      <circle cx="40" cy="0" r="1" fill="#14532d" />
     </pattern>
-
-    <!-- Scanline Texture -->
-    <pattern id="scanlines" width="100" height="4" patternUnits="userSpaceOnUse">
-      <line x1="0" y1="0" x2="100" y2="0" stroke="#000000" stroke-width="1.2" stroke-opacity="0.35" />
-    </pattern>
-
-    <!-- Ambient Phosphor Glow -->
-    <radialGradient id="phosphorGlow" cx="50%" cy="45%" r="55%">
-      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.08" />
-      <stop offset="60%" stop-color="#00f5ff" stop-opacity="0.02" />
-      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
-    </radialGradient>
   </defs>
 
   <style>
-    @keyframes pulseFade {
-      0%, 100% { opacity: 0.35; transform: scale(0.98); }
-      50% { opacity: 1; transform: scale(1.02); }
-    }
     @keyframes blink {
       0%, 49% { opacity: 1; }
       50%, 100% { opacity: 0; }
     }
-    @keyframes radarScan {
-      0% { transform: translateY(-350px); }
-      100% { transform: translateY(350px); }
+    @keyframes beaconPulse {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
     }
 
-    .pulse {
-      animation: pulseFade 2.8s ease-in-out infinite;
-    }
     .cursor-blink {
       animation: blink 1s infinite;
+    }
+    .beacon {
+      animation: beaconPulse 2s ease-in-out infinite;
     }
 
     .term-header {
@@ -67,7 +35,6 @@
       font-size: 10px;
       letter-spacing: 1px;
       fill: #4ade80;
-      opacity: 0.75;
     }
     .title-main {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif;
@@ -77,13 +44,13 @@
       fill: #ffffff;
     }
     .title-highlight {
-      fill: #4ade80;
+      fill: #22c55e;
     }
     .subtitle {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
       font-size: 13px;
       letter-spacing: 1.8px;
-      fill: #a3e635;
+      fill: #86efac;
       text-transform: uppercase;
     }
     .card-label {
@@ -91,7 +58,7 @@
       font-size: 10px;
       letter-spacing: 1.2px;
       font-weight: 700;
-      fill: #6ee7b7;
+      fill: #4ade80;
       text-transform: uppercase;
     }
     .card-value {
@@ -101,32 +68,23 @@
       letter-spacing: 0.3px;
       fill: #f0fdf4;
     }
-    .hud-bracket {
-      fill: #15803d;
-      font-family: ui-monospace, monospace;
-      font-size: 14px;
-      font-weight: 700;
-    }
   </style>
 
-  <!-- Container Box -->
-  <rect width="1198" height="348" x="1" y="1" rx="14" fill="url(#terminalBg)" stroke="#166534" stroke-width="1.2" />
+  <!-- Solid Background (No Gradient) -->
+  <rect width="1198" height="348" x="1" y="1" rx="12" fill="#050505" stroke="#166534" stroke-width="1.2" />
 
-  <!-- Tactical Grid Layer -->
-  <rect width="1198" height="348" x="1" y="1" rx="14" fill="url(#tacticalGrid)" />
+  <!-- Solid Tactical Grid Overlay -->
+  <rect width="1198" height="348" x="1" y="1" rx="12" fill="url(#tacticalGrid)" />
 
-  <!-- Phosphor Radial Glow -->
-  <rect width="1198" height="348" x="1" y="1" rx="14" fill="url(#phosphorGlow)" />
-
-  <!-- Top Accent Laser Beam -->
-  <line x1="80" y1="1" x2="1120" y2="1" stroke="url(#neonGreenGrad)" stroke-width="2" />
+  <!-- Solid Top Green Accent Bar (No Gradient) -->
+  <rect x="1" y="1" width="1198" height="3" rx="1" fill="#22c55e" />
 
   <!-- ==================== TERMINAL TITLE BAR ==================== -->
   <g transform="translate(24, 28)">
-    <!-- Terminal Window Controls -->
-    <circle cx="8" cy="0" r="5" fill="#ef4444" fill-opacity="0.85" />
-    <circle cx="26" cy="0" r="5" fill="#f59e0b" fill-opacity="0.85" />
-    <circle cx="44" cy="0" r="5" fill="#22c55e" fill-opacity="0.85" />
+    <!-- Solid Window Buttons -->
+    <circle cx="8" cy="0" r="5" fill="#ef4444" />
+    <circle cx="26" cy="0" r="5" fill="#f59e0b" />
+    <circle cx="44" cy="0" r="5" fill="#22c55e" />
 
     <!-- Terminal Prompt & Path -->
     <text x="68" y="4" class="term-header">tejassxo@corps-of-signals:~# <tspan fill="#ffffff">sys_init --directive=DEFENSE_INTEL</tspan><tspan class="cursor-blink" fill="#22c55e">_</tspan></text>
@@ -134,19 +92,19 @@
     <!-- Right HUD Telemetry Status -->
     <g transform="translate(1148, 0)">
       <circle cx="-160" cy="0" r="3.5" fill="#22c55e" />
-      <circle cx="-160" cy="0" r="7" fill="none" stroke="#22c55e" stroke-width="1" class="pulse" />
+      <circle cx="-160" cy="0" r="7" fill="none" stroke="#22c55e" stroke-width="1" class="beacon" />
       <text x="-144" y="4" class="term-meta">ENC: AES-256 // CLEARANCE: DECLASSIFIED</text>
     </g>
   </g>
 
-  <!-- Hairline Divider -->
-  <line x1="20" y1="46" x2="1180" y2="46" stroke="#14532d" stroke-width="0.8" stroke-opacity="0.7" />
+  <!-- Solid Hairline Divider -->
+  <line x1="20" y1="46" x2="1180" y2="46" stroke="#166534" stroke-width="1" />
 
-  <!-- ==================== STATUS PILL ==================== -->
+  <!-- ==================== STATUS PILL (SOLID FLAT) ==================== -->
   <g transform="translate(600, 84)">
-    <rect x="-175" y="-14" width="350" height="28" rx="6" fill="#042013" stroke="#22c55e" stroke-width="1" />
-    <circle cx="-150" cy="0" r="3.5" fill="#4ade80" />
-    <circle cx="-150" cy="0" r="7" fill="none" stroke="#4ade80" stroke-width="1" class="pulse" />
+    <rect x="-175" y="-14" width="350" height="28" rx="6" fill="#091a10" stroke="#22c55e" stroke-width="1" />
+    <circle cx="-150" cy="0" r="3.5" fill="#22c55e" />
+    <circle cx="-150" cy="0" r="7" fill="none" stroke="#22c55e" stroke-width="1" class="beacon" />
     <text x="10" y="4" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11px" font-weight="700" letter-spacing="1.5px" fill="#86efac">
       OPERATIONAL PROFILE // LEVEL-01 READY
     </text>
@@ -171,30 +129,27 @@
     <line x1="30" y1="0" x2="380" y2="0" stroke="#166534" stroke-width="1" />
   </g>
 
-  <!-- ==================== 3 HUD TELEMETRY MODULES ==================== -->
+  <!-- ==================== 3 SOLID HUD TELEMETRY MODULES ==================== -->
   <g transform="translate(600, 280)">
     <!-- MODULE 01: ACADEMICS & TRAJECTORY -->
     <g transform="translate(-380, 0)">
-      <rect x="-10" y="-28" width="240" height="52" rx="6" fill="#051c11" stroke="#166534" stroke-width="1" />
+      <rect x="-10" y="-28" width="240" height="52" rx="6" fill="#09140e" stroke="#166534" stroke-width="1" />
       <text x="8" y="-10" class="card-label">01 // TRAJECTORY &amp; CORPS</text>
       <text x="8" y="12" class="card-value">Indian Army TGC (Signals)</text>
     </g>
 
     <!-- MODULE 02: SPECIALIZATION -->
     <g transform="translate(-110, 0)">
-      <rect x="-10" y="-28" width="240" height="52" rx="6" fill="#051c11" stroke="#166534" stroke-width="1" />
+      <rect x="-10" y="-28" width="240" height="52" rx="6" fill="#09140e" stroke="#166534" stroke-width="1" />
       <text x="8" y="-10" class="card-label">02 // RESEARCH &amp; VAPT</text>
       <text x="8" y="12" class="card-value">Offensive VAPT &amp; OSINT</text>
     </g>
 
     <!-- MODULE 03: CLOUD & AI -->
     <g transform="translate(160, 0)">
-      <rect x="-10" y="-28" width="240" height="52" rx="6" fill="#051c11" stroke="#166534" stroke-width="1" />
+      <rect x="-10" y="-28" width="240" height="52" rx="6" fill="#09140e" stroke="#166534" stroke-width="1" />
       <text x="8" y="-10" class="card-label">03 // SYSTEMS &amp; TELEMETRY</text>
       <text x="8" y="12" class="card-value">Cloud-Native AI Telemetry</text>
     </g>
   </g>
-
-  <!-- Scanline Overlay for True CRT/Terminal Monitor Texture -->
-  <rect width="1198" height="348" x="1" y="1" rx="14" fill="url(#scanlines)" pointer-events="none" />
 </svg>
