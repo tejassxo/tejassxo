@@ -86,6 +86,14 @@
 
 ---
 
+### Zen Defense Command HUD
+
+<div align="center">
+  <img src="./assets/zen_hud.svg" alt="Japanese Zen Defense Command HUD" width="100%" />
+</div>
+
+---
+
 ### Industry Appointments &amp; Research Labs
 
 <table>

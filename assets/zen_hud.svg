@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <!-- Apple Minimal Dot Matrix (Zero Green, Zero Neon) -->
+    <pattern id="hudDotGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#242427" />
+    </pattern>
+  </defs>
+
+  <style>
+    /* Continuous Japanese Zen Orbit and Radar Animations */
+    @keyframes ensoSpin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes ensoCounter {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(-360deg); }
+    }
+    @keyframes pulseAura {
+      0%, 100% { opacity: 0.3; transform: scale(0.97); }
+      50% { opacity: 0.8; transform: scale(1.03); }
+    }
+    @keyframes radarScanLine {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes beaconBlink {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+
+    .enso-cw {
+      animation: ensoSpin 24s linear infinite;
+      transform-origin: 600px 150px;
+    }
+    .enso-ccw {
+      animation: ensoCounter 18s linear infinite;
+      transform-origin: 600px 150px;
+    }
+    .radar-sweep {
+      animation: radarScanLine 8s linear infinite;
+      transform-origin: 600px 150px;
+    }
+    .pulse-zen {
+      animation: pulseAura 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      transform-origin: 600px 150px;
+    }
+    .beacon {
+      animation: beaconBlink 2.2s ease-in-out infinite;
+    }
+
+    .hud-title {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+      fill: #f5f5f7;
+    }
+    .hud-label {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      fill: #86868b;
+      text-transform: uppercase;
+    }
+    .hud-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
+      font-size: 11px;
+      line-height: 16px;
+      fill: #a1a1a6;
+    }
+    .hud-pill-tag {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      fill: #d1d1d6;
+    }
+  </style>
+
+  <!-- Container Box: Apple Space Black Surface -->
+  <rect width="1198" height="298" x="1" y="1" rx="18" fill="#000000" stroke="#2c2c2e" stroke-width="1.2" />
+  <rect width="1198" height="298" x="1" y="1" rx="18" fill="url(#hudDotGrid)" />
+
+  <!-- ==================== CENTRAL JAPANESE ZEN HUD RADAR & YIN-YANG ==================== -->
+  <!-- Outer Breathing Ensō Aura -->
+  <circle cx="600" cy="150" r="125" fill="none" stroke="#222225" stroke-width="1" class="pulse-zen" />
+  <circle cx="600" cy="150" r="105" fill="none" stroke="#2a2a2e" stroke-width="1.2" stroke-dasharray="6 8" class="enso-cw" />
+  
+  <!-- Sweeping Radar Line -->
+  <line x1="600" y1="150" x2="600" y2="50" stroke="#f5f5f7" stroke-width="1.2" stroke-opacity="0.5" class="radar-sweep" />
+
+  <!-- Orbiting Dual Energy Satellites -->
+  <g class="enso-cw">
+    <circle cx="600" cy="70" r="4" fill="#f5f5f7" />
+    <circle cx="600" cy="230" r="4" fill="#121214" stroke="#86868b" stroke-width="1.2" />
+  </g>
+
+  <!-- Rotating Core Yin-Yang (Taijitu) -->
+  <g class="enso-ccw">
+    <circle cx="600" cy="150" r="54" fill="#121214" stroke="#3a3a3e" stroke-width="1.5" />
+    <!-- White Half (Yang) -->
+    <path d="M 600 96 A 54 54 0 0 1 600 204 A 27 27 0 0 1 600 150 A 27 27 0 0 0 600 96 Z" fill="#f5f5f7" />
+    <!-- Seed Dots -->
+    <circle cx="600" cy="123" r="7" fill="#121214" />
+    <circle cx="600" cy="177" r="7" fill="#f5f5f7" />
+  </g>
+
+  <!-- Horizontal & Vertical Crosshairs -->
+  <line x1="32" y1="150" x2="480" y2="150" stroke="#222226" stroke-width="1" />
+  <line x1="720" y1="150" x2="1168" y2="150" stroke="#222226" stroke-width="1" />
+
+  <!-- ==================== QUADRANT I: OFFENSIVE VAPT (TOP-LEFT) ==================== -->
+  <g transform="translate(36, 32)">
+    <circle cx="6" cy="6" r="3" fill="#f5f5f7" />
+    <circle cx="6" cy="6" r="6" fill="none" stroke="#86868b" stroke-width="1" class="beacon" />
+    <text x="20" y="10" class="hud-label">QUADRANT 01 // OFFENSIVE VAPT</text>
+    <text x="0" y="32" class="hud-title">Vulnerability Assessment &amp; OSINT</text>
+    <text x="0" y="52" class="hud-text">Web application auditing, reconnaissance vectors &amp; PTES standards.</text>
+    <rect x="0" y="66" width="220" height="22" rx="6" fill="#141416" stroke="#2c2c2e" stroke-width="0.8" />
+    <text x="10" y="80" class="hud-pill-tag">Kali Linux · BurpSuite Pro · Nmap · OWASP</text>
+  </g>
+
+  <!-- ==================== QUADRANT II: DEFENSE TRAJECTORY (TOP-RIGHT) ==================== -->
+  <g transform="translate(730, 32)">
+    <circle cx="6" cy="6" r="3" fill="#f5f5f7" />
+    <circle cx="6" cy="6" r="6" fill="none" stroke="#86868b" stroke-width="1" class="beacon" />
+    <text x="20" y="10" class="hud-label">QUADRANT 02 // DEFENSE DOCTRINE</text>
+    <text x="0" y="32" class="hud-title">Indian Army TGC (Corps of Signals)</text>
+    <text x="0" y="52" class="hud-text">Commissioning trajectory for cyber operations &amp; defense intelligence.</text>
+    <rect x="0" y="66" width="220" height="22" rx="6" fill="#141416" stroke="#2c2c2e" stroke-width="0.8" />
+    <text x="10" y="80" class="hud-pill-tag">Corps of Signals · Defense Intel · Sovereignty</text>
+  </g>
+
+  <!-- ==================== QUADRANT III: REAL-TIME TELEMETRY (BOTTOM-LEFT) ==================== -->
+  <g transform="translate(36, 178)">
+    <circle cx="6" cy="6" r="3" fill="#f5f5f7" />
+    <circle cx="6" cy="6" r="6" fill="none" stroke="#86868b" stroke-width="1" class="beacon" />
+    <text x="20" y="10" class="hud-label">QUADRANT 03 // REAL-TIME TELEMETRY</text>
+    <text x="0" y="32" class="hud-title">Biometric Stream &amp; Cloud Telemetry</text>
+    <text x="0" y="52" class="hud-text">Serverless ingestion pipelines for wearable biometrics on AWS.</text>
+    <rect x="0" y="66" width="220" height="22" rx="6" fill="#141416" stroke="#2c2c2e" stroke-width="0.8" />
+    <text x="10" y="80" class="hud-pill-tag">AWS Amplify · React · API GW · Serverless</text>
+  </g>
+
+  <!-- ==================== QUADRANT IV: SYSTEMS & CREATIVE TECH (BOTTOM-RIGHT) ==================== -->
+  <g transform="translate(730, 178)">
+    <circle cx="6" cy="6" r="3" fill="#f5f5f7" />
+    <circle cx="6" cy="6" r="6" fill="none" stroke="#86868b" stroke-width="1" class="beacon" />
+    <text x="20" y="10" class="hud-label">QUADRANT 04 // SYSTEMS &amp; CREATIVE TECH</text>
+    <text x="0" y="32" class="hud-title">WebGL Physics &amp; GSAP Choreography</text>
+    <text x="0" y="52" class="hud-text">Interactive engineering studio with Three.js motion choreography.</text>
+    <rect x="0" y="66" width="220" height="22" rx="6" fill="#141416" stroke="#2c2c2e" stroke-width="0.8" />
+    <text x="10" y="80" class="hud-pill-tag">Next.js · TypeScript · Three.js · GSAP</text>
+  </g>
+</svg>

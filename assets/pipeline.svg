@@ -1,32 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="100%" height="100%">
   <defs>
-    <!-- Apple Subtle Dot Grid (Neutral Monochrome, Zero Green, Zero Neon) -->
+    <!-- Japanese Minimal Dot Grid (Zero Green, Zero Neon) -->
     <pattern id="dotGrid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="0.75" fill="#2c2c2e" />
+      <circle cx="2" cy="2" r="0.75" fill="#262629" />
     </pattern>
   </defs>
 
   <style>
-    /* GSAP Fluid Choreography (Power4.out / cubic-bezier(0.16, 1, 0.3, 1)) */
+    /* Continuous Flow and Zen Beacon Animations */
     @keyframes gsapBeam {
-      0% {
-        stroke-dashoffset: 280;
-      }
-      100% {
-        stroke-dashoffset: 0;
-      }
+      0% { stroke-dashoffset: 280; }
+      100% { stroke-dashoffset: 0; }
     }
-
+    @keyframes zenBeaconSpin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
     @keyframes appleBreathing {
-      0%, 100% { opacity: 0.4; }
-      50% { opacity: 1; }
+      0%, 100% { opacity: 0.35; }
+      50% { opacity: 0.9; }
     }
 
     .gsap-flow {
       stroke-dasharray: 40 80;
       animation: gsapBeam 4s linear infinite;
     }
-
+    .zen-beacon-spin {
+      animation: zenBeaconSpin 12s linear infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
     .apple-pulse {
       animation: appleBreathing 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
     }
@@ -35,11 +38,10 @@
       font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
       font-size: 11px;
       font-weight: 600;
-      letter-spacing: 1.5px;
+      letter-spacing: 1.8px;
       fill: #86868b;
       text-transform: uppercase;
     }
-
     .status-text {
       font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
       font-size: 11px;
@@ -47,7 +49,6 @@
       letter-spacing: 0.5px;
       fill: #a1a1a6;
     }
-
     .node-num {
       font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
       font-size: 11px;
@@ -55,7 +56,6 @@
       letter-spacing: 1px;
       fill: #86868b;
     }
-
     .node-title {
       font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
       font-size: 16px;
@@ -63,14 +63,12 @@
       letter-spacing: -0.3px;
       fill: #f5f5f7;
     }
-
     .node-desc {
       font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
       font-size: 12px;
       line-height: 17px;
       fill: #86868b;
     }
-
     .node-tag {
       font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
       font-size: 10px;
@@ -91,7 +89,7 @@
     <g transform="translate(1128, -4)">
       <circle cx="-135" cy="0" r="3.5" fill="#f5f5f7" />
       <circle cx="-135" cy="0" r="7" fill="none" stroke="#86868b" stroke-width="1" class="apple-pulse" />
-      <text x="-120" y="4" class="status-text">PIPELINE ACTIVE</text>
+      <text x="-120" y="4" class="status-text">LIFECYCLE ONLINE</text>
     </g>
   </g>
 
@@ -103,8 +101,9 @@
   <!-- ==================== NODE 1: RECON & OSINT ==================== -->
   <g transform="translate(36, 60)">
     <rect width="256" height="186" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
-    <circle cx="20" cy="24" r="3" fill="#86868b" />
-    <text x="32" y="28" class="node-num">01</text>
+    <circle cx="20" cy="24" r="3" fill="#f5f5f7" />
+    <circle cx="20" cy="24" r="7" fill="none" stroke="#86868b" stroke-width="1" stroke-dasharray="3 3" class="zen-beacon-spin" />
+    <text x="36" y="28" class="node-num">01</text>
     <text x="20" y="58" class="node-title">Recon &amp; OSINT</text>
     <text x="20" y="80" class="node-desc">Passive intelligence gathering,</text>
     <text x="20" y="98" class="node-desc">attack surface enumeration &amp;</text>
@@ -118,8 +117,9 @@
   <!-- ==================== NODE 2: VAPT & AUDITING ==================== -->
   <g transform="translate(325, 60)">
     <rect width="256" height="186" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
-    <circle cx="20" cy="24" r="3" fill="#86868b" />
-    <text x="32" y="28" class="node-num">02</text>
+    <circle cx="20" cy="24" r="3" fill="#f5f5f7" />
+    <circle cx="20" cy="24" r="7" fill="none" stroke="#86868b" stroke-width="1" stroke-dasharray="3 3" class="zen-beacon-spin" />
+    <text x="36" y="28" class="node-num">02</text>
     <text x="20" y="58" class="node-title">VAPT &amp; Auditing</text>
     <text x="20" y="80" class="node-desc">Web app penetration testing,</text>
     <text x="20" y="98" class="node-desc">OWASP Top 10 verification &amp;</text>
@@ -133,8 +133,9 @@
   <!-- ==================== NODE 3: AI & TELEMETRY ==================== -->
   <g transform="translate(614, 60)">
     <rect width="256" height="186" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
-    <circle cx="20" cy="24" r="3" fill="#86868b" />
-    <text x="32" y="28" class="node-num">03</text>
+    <circle cx="20" cy="24" r="3" fill="#f5f5f7" />
+    <circle cx="20" cy="24" r="7" fill="none" stroke="#86868b" stroke-width="1" stroke-dasharray="3 3" class="zen-beacon-spin" />
+    <text x="36" y="28" class="node-num">03</text>
     <text x="20" y="58" class="node-title">AI &amp; Telemetry</text>
     <text x="20" y="80" class="node-desc">Cloud-native biometric streaming,</text>
     <text x="20" y="98" class="node-desc">serverless data pipelines &amp;</text>
@@ -148,8 +149,9 @@
   <!-- ==================== NODE 4: DEFENSE DOCTRINE ==================== -->
   <g transform="translate(903, 60)">
     <rect width="256" height="186" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
-    <circle cx="20" cy="24" r="3" fill="#86868b" />
-    <text x="32" y="28" class="node-num">04</text>
+    <circle cx="20" cy="24" r="3" fill="#f5f5f7" />
+    <circle cx="20" cy="24" r="7" fill="none" stroke="#86868b" stroke-width="1" stroke-dasharray="3 3" class="zen-beacon-spin" />
+    <text x="36" y="28" class="node-num">04</text>
     <text x="20" y="58" class="node-title">Defense Doctrine</text>
     <text x="20" y="80" class="node-desc">Cyber warfare intelligence,</text>
     <text x="20" y="98" class="node-desc">systems hardening &amp; strategic</text>
