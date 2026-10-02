@@ -1,156 +1,162 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="100%" height="100%">
   <defs>
-    <!-- Terminal Tactical Dot Matrix (Solid Dots, Zero Gradient) -->
+    <!-- Apple Subtle Dot Grid (Neutral Monochrome, Zero Green, Zero Neon) -->
     <pattern id="dotGrid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="0.8" fill="#14532d" />
+      <circle cx="2" cy="2" r="0.75" fill="#2c2c2e" />
     </pattern>
   </defs>
 
   <style>
-    .mono-label {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-size: 11px;
-      letter-spacing: 1.5px;
-      fill: #86efac;
-      text-transform: uppercase;
-      font-weight: 700;
-    }
-    .status-text {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-size: 11px;
-      letter-spacing: 1px;
-      fill: #4ade80;
-    }
-    .node-num {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 1.2px;
-      fill: #22c55e;
-    }
-    .node-title {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif;
-      font-size: 16px;
-      font-weight: 800;
-      letter-spacing: -0.2px;
-      fill: #ffffff;
-    }
-    .node-desc {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif;
-      font-size: 12px;
-      line-height: 16px;
-      fill: #94a3b8;
-    }
-    .node-tag {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-size: 10px;
-      font-weight: 600;
-      fill: #86efac;
-    }
-
-    /* Animated Solid Phosphor Pulse (Zero Gradient) */
-    @keyframes beamFlow {
+    /* GSAP Fluid Choreography (Power4.out / cubic-bezier(0.16, 1, 0.3, 1)) */
+    @keyframes gsapBeam {
       0% {
-        stroke-dashoffset: 240;
+        stroke-dashoffset: 280;
       }
       100% {
         stroke-dashoffset: 0;
       }
     }
 
-    @keyframes pulseFade {
-      0%, 100% { opacity: 0.35; }
+    @keyframes appleBreathing {
+      0%, 100% { opacity: 0.4; }
       50% { opacity: 1; }
     }
 
-    .beam-path {
+    .gsap-flow {
       stroke-dasharray: 40 80;
-      animation: beamFlow 3.5s linear infinite;
+      animation: gsapBeam 4s linear infinite;
     }
 
-    .pulse-glow {
-      animation: pulseFade 2.2s ease-in-out infinite;
+    .apple-pulse {
+      animation: appleBreathing 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+
+    .apple-label {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      fill: #86868b;
+      text-transform: uppercase;
+    }
+
+    .status-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      fill: #a1a1a6;
+    }
+
+    .node-num {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      fill: #86868b;
+    }
+
+    .node-title {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      fill: #f5f5f7;
+    }
+
+    .node-desc {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
+      font-size: 12px;
+      line-height: 17px;
+      fill: #86868b;
+    }
+
+    .node-tag {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      fill: #d1d1d6;
     }
   </style>
 
-  <!-- Solid Panel Background (No Gradient) -->
-  <rect width="1198" height="278" x="1" y="1" rx="12" fill="#050505" stroke="#166534" stroke-width="1.2" />
-  <rect width="1198" height="278" x="1" y="1" rx="12" fill="url(#dotGrid)" />
+  <!-- Container Box: Apple Space Black Surface -->
+  <rect width="1198" height="278" x="1" y="1" rx="16" fill="#000000" stroke="#2c2c2e" stroke-width="1.2" />
+  <rect width="1198" height="278" x="1" y="1" rx="16" fill="url(#dotGrid)" />
 
-  <!-- Top Bar -->
-  <g transform="translate(32, 36)">
-    <text x="0" y="0" class="mono-label">PIPELINE // SYSTEMS ARCHITECTURE &amp; SECURITY LIFECYCLE</text>
+  <!-- Top Apple Section Header -->
+  <g transform="translate(36, 36)">
+    <text x="0" y="0" class="apple-label">SYSTEMS ARCHITECTURE &amp; SECURITY LIFECYCLE</text>
     
     <!-- Status indicator right -->
-    <g transform="translate(1134, -4)">
-      <circle cx="-140" cy="0" r="3.5" fill="#22c55e" />
-      <circle cx="-140" cy="0" r="7" fill="none" stroke="#22c55e" stroke-width="1" class="pulse-glow" />
-      <text x="-124" y="4" class="status-text">LIFECYCLE ONLINE</text>
+    <g transform="translate(1128, -4)">
+      <circle cx="-135" cy="0" r="3.5" fill="#f5f5f7" />
+      <circle cx="-135" cy="0" r="7" fill="none" stroke="#86868b" stroke-width="1" class="apple-pulse" />
+      <text x="-120" y="4" class="status-text">PIPELINE ACTIVE</text>
     </g>
   </g>
 
-  <!-- Solid Connector Rail Behind Cards -->
-  <line x1="160" y1="145" x2="1040" y2="145" stroke="#14532d" stroke-width="2" stroke-dasharray="4 4" />
-  <!-- Animated Solid Beam (No Gradient) -->
-  <line x1="160" y1="145" x2="1040" y2="145" stroke="#22c55e" stroke-width="2" class="beam-path" />
+  <!-- Connector Rail -->
+  <line x1="160" y1="145" x2="1040" y2="145" stroke="#242426" stroke-width="2" stroke-dasharray="4 4" />
+  <!-- GSAP Animated Apple White Flowing Beam -->
+  <line x1="160" y1="145" x2="1040" y2="145" stroke="#e5e5ea" stroke-width="2" class="gsap-flow" />
 
-  <!-- ==================== NODE 1 ==================== -->
-  <g transform="translate(32, 60)">
-    <rect width="260" height="186" rx="8" fill="#09140e" stroke="#166534" stroke-width="1" />
-    <circle cx="20" cy="24" r="3" fill="#22c55e" />
-    <text x="32" y="28" class="node-num">STAGE 01</text>
+  <!-- ==================== NODE 1: RECON & OSINT ==================== -->
+  <g transform="translate(36, 60)">
+    <rect width="256" height="186" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
+    <circle cx="20" cy="24" r="3" fill="#86868b" />
+    <text x="32" y="28" class="node-num">01</text>
     <text x="20" y="58" class="node-title">Recon &amp; OSINT</text>
     <text x="20" y="80" class="node-desc">Passive intelligence gathering,</text>
     <text x="20" y="98" class="node-desc">attack surface enumeration &amp;</text>
-    <text x="20" y="116" class="node-desc">threat footprint mapping.</text>
+    <text x="20" y="116" class="node-desc">threat footprint analysis.</text>
 
     <!-- Bottom Tag Pill -->
-    <rect x="18" y="142" width="224" height="26" rx="4" fill="#050505" stroke="#166534" stroke-width="0.8" />
+    <rect x="18" y="142" width="220" height="26" rx="8" fill="#1c1c1e" stroke="#2c2c2e" stroke-width="0.8" />
     <text x="26" y="159" class="node-tag">Sherlock · theHarvester · Nmap</text>
   </g>
 
-  <!-- ==================== NODE 2 ==================== -->
-  <g transform="translate(324, 60)">
-    <rect width="260" height="186" rx="8" fill="#09140e" stroke="#166534" stroke-width="1" />
-    <circle cx="20" cy="24" r="3" fill="#22c55e" />
-    <text x="32" y="28" class="node-num">STAGE 02</text>
+  <!-- ==================== NODE 2: VAPT & AUDITING ==================== -->
+  <g transform="translate(325, 60)">
+    <rect width="256" height="186" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
+    <circle cx="20" cy="24" r="3" fill="#86868b" />
+    <text x="32" y="28" class="node-num">02</text>
     <text x="20" y="58" class="node-title">VAPT &amp; Auditing</text>
     <text x="20" y="80" class="node-desc">Web app penetration testing,</text>
     <text x="20" y="98" class="node-desc">OWASP Top 10 verification &amp;</text>
     <text x="20" y="116" class="node-desc">ethical exploit validation.</text>
 
     <!-- Bottom Tag Pill -->
-    <rect x="18" y="142" width="224" height="26" rx="4" fill="#050505" stroke="#166534" stroke-width="0.8" />
-    <text x="26" y="159" class="node-tag">BurpSuite · PTES · ZAP</text>
+    <rect x="18" y="142" width="220" height="26" rx="8" fill="#1c1c1e" stroke="#2c2c2e" stroke-width="0.8" />
+    <text x="26" y="159" class="node-tag">BurpSuite Pro · PTES · ZAP</text>
   </g>
 
-  <!-- ==================== NODE 3 ==================== -->
-  <g transform="translate(616, 60)">
-    <rect width="260" height="186" rx="8" fill="#09140e" stroke="#166534" stroke-width="1" />
-    <circle cx="20" cy="24" r="3" fill="#22c55e" />
-    <text x="32" y="28" class="node-num">STAGE 03</text>
+  <!-- ==================== NODE 3: AI & TELEMETRY ==================== -->
+  <g transform="translate(614, 60)">
+    <rect width="256" height="186" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
+    <circle cx="20" cy="24" r="3" fill="#86868b" />
+    <text x="32" y="28" class="node-num">03</text>
     <text x="20" y="58" class="node-title">AI &amp; Telemetry</text>
     <text x="20" y="80" class="node-desc">Cloud-native biometric streaming,</text>
     <text x="20" y="98" class="node-desc">serverless data pipelines &amp;</text>
     <text x="20" y="116" class="node-desc">anomaly detection models.</text>
 
     <!-- Bottom Tag Pill -->
-    <rect x="18" y="142" width="224" height="26" rx="4" fill="#050505" stroke="#166534" stroke-width="0.8" />
+    <rect x="18" y="142" width="220" height="26" rx="8" fill="#1c1c1e" stroke="#2c2c2e" stroke-width="0.8" />
     <text x="26" y="159" class="node-tag">AWS Amplify · React · API GW</text>
   </g>
 
-  <!-- ==================== NODE 4 ==================== -->
-  <g transform="translate(908, 60)">
-    <rect width="260" height="186" rx="8" fill="#09140e" stroke="#166534" stroke-width="1" />
-    <circle cx="20" cy="24" r="3" fill="#22c55e" />
-    <text x="32" y="28" class="node-num">STAGE 04</text>
+  <!-- ==================== NODE 4: DEFENSE DOCTRINE ==================== -->
+  <g transform="translate(903, 60)">
+    <rect width="256" height="186" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
+    <circle cx="20" cy="24" r="3" fill="#86868b" />
+    <text x="32" y="28" class="node-num">04</text>
     <text x="20" y="58" class="node-title">Defense Doctrine</text>
     <text x="20" y="80" class="node-desc">Cyber warfare intelligence,</text>
     <text x="20" y="98" class="node-desc">systems hardening &amp; strategic</text>
     <text x="20" y="116" class="node-desc">Indian Army TGC readiness.</text>
 
     <!-- Bottom Tag Pill -->
-    <rect x="18" y="142" width="224" height="26" rx="4" fill="#050505" stroke="#166534" stroke-width="0.8" />
+    <rect x="18" y="142" width="220" height="26" rx="8" fill="#1c1c1e" stroke="#2c2c2e" stroke-width="0.8" />
     <text x="26" y="159" class="node-tag">Army TGC · Signals · Defense</text>
   </g>
 </svg>

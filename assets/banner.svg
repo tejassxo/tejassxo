@@ -1,155 +1,163 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" width="100%" height="100%">
   <defs>
-    <!-- Tactical Grid Pattern (Pure Solid Lines & Dots, Zero Gradient) -->
-    <pattern id="tacticalGrid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0e1f14" stroke-width="0.8" />
-      <circle cx="40" cy="0" r="1" fill="#14532d" />
+    <!-- Apple Minimal Dot Matrix (Subtle Neutral Gray, Zero Green, Zero Neon) -->
+    <pattern id="appleDotGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#2c2c2e" />
     </pattern>
   </defs>
 
   <style>
-    @keyframes blink {
-      0%, 49% { opacity: 1; }
-      50%, 100% { opacity: 0; }
-    }
-    @keyframes beaconPulse {
-      0%, 100% { opacity: 0.4; }
-      50% { opacity: 1; }
-    }
-
-    .cursor-blink {
-      animation: blink 1s infinite;
-    }
-    .beacon {
-      animation: beaconPulse 2s ease-in-out infinite;
+    /* GSAP Fluid Easing Equivalents: Power4.out / cubic-bezier(0.16, 1, 0.3, 1) */
+    @keyframes gsapRevealUp {
+      0% {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
-    .term-header {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+    @keyframes appleBreathing {
+      0%, 100% { opacity: 0.35; transform: scale(0.96); }
+      50% { opacity: 0.9; transform: scale(1.04); }
+    }
+
+    @keyframes gsapStagger1 {
+      0% { opacity: 0; transform: translateY(8px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .gsap-hero {
+      animation: gsapRevealUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .gsap-pill {
+      animation: gsapRevealUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+      animation-delay: 0.1s;
+    }
+
+    .gsap-card-1 {
+      animation: gsapStagger1 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+      animation-delay: 0.25s;
+    }
+    .gsap-card-2 {
+      animation: gsapStagger1 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+      animation-delay: 0.35s;
+    }
+    .gsap-card-3 {
+      animation: gsapStagger1 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+      animation-delay: 0.45s;
+    }
+
+    .apple-pulse {
+      animation: appleBreathing 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      transform-origin: center;
+    }
+
+    /* Apple SF Pro Typography System */
+    .apple-eyebrow {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
       font-size: 11px;
-      letter-spacing: 1.5px;
-      fill: #86efac;
-    }
-    .term-meta {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
-      font-size: 10px;
-      letter-spacing: 1px;
-      fill: #4ade80;
-    }
-    .title-main {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif;
-      font-weight: 900;
-      font-size: 48px;
-      letter-spacing: 2px;
-      fill: #ffffff;
-    }
-    .title-highlight {
-      fill: #22c55e;
-    }
-    .subtitle {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-size: 13px;
-      letter-spacing: 1.8px;
-      fill: #86efac;
-      text-transform: uppercase;
-    }
-    .card-label {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-size: 10px;
-      letter-spacing: 1.2px;
-      font-weight: 700;
-      fill: #4ade80;
-      text-transform: uppercase;
-    }
-    .card-value {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif;
-      font-size: 12px;
       font-weight: 600;
-      letter-spacing: 0.3px;
-      fill: #f0fdf4;
+      letter-spacing: 2px;
+      fill: #86868b;
+      text-transform: uppercase;
+    }
+
+    .apple-headline {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
+      font-size: 46px;
+      font-weight: 700;
+      letter-spacing: -0.8px;
+      fill: #f5f5f7;
+    }
+
+    .apple-headline-silver {
+      fill: #86868b;
+      font-weight: 400;
+    }
+
+    .apple-subhead {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: -0.2px;
+      line-height: 20px;
+      fill: #a1a1a6;
+    }
+
+    .bento-label {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      fill: #86868b;
+      text-transform: uppercase;
+    }
+
+    .bento-value {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+      fill: #f5f5f7;
     }
   </style>
 
-  <!-- Solid Background (No Gradient) -->
-  <rect width="1198" height="348" x="1" y="1" rx="12" fill="#050505" stroke="#166534" stroke-width="1.2" />
+  <!-- Container Box: Apple Space Black Surface -->
+  <rect width="1198" height="348" x="1" y="1" rx="18" fill="#000000" stroke="#2c2c2e" stroke-width="1.2" />
 
-  <!-- Solid Tactical Grid Overlay -->
-  <rect width="1198" height="348" x="1" y="1" rx="12" fill="url(#tacticalGrid)" />
+  <!-- Subtle Neutral Dot Grid -->
+  <rect width="1198" height="348" x="1" y="1" rx="18" fill="url(#appleDotGrid)" />
 
-  <!-- Solid Top Green Accent Bar (No Gradient) -->
-  <rect x="1" y="1" width="1198" height="3" rx="1" fill="#22c55e" />
-
-  <!-- ==================== TERMINAL TITLE BAR ==================== -->
-  <g transform="translate(24, 28)">
-    <!-- Solid Window Buttons -->
-    <circle cx="8" cy="0" r="5" fill="#ef4444" />
-    <circle cx="26" cy="0" r="5" fill="#f59e0b" />
-    <circle cx="44" cy="0" r="5" fill="#22c55e" />
-
-    <!-- Terminal Prompt & Path -->
-    <text x="68" y="4" class="term-header">tejassxo@corps-of-signals:~# <tspan fill="#ffffff">sys_init --directive=DEFENSE_INTEL</tspan><tspan class="cursor-blink" fill="#22c55e">_</tspan></text>
-
-    <!-- Right HUD Telemetry Status -->
-    <g transform="translate(1148, 0)">
-      <circle cx="-160" cy="0" r="3.5" fill="#22c55e" />
-      <circle cx="-160" cy="0" r="7" fill="none" stroke="#22c55e" stroke-width="1" class="beacon" />
-      <text x="-144" y="4" class="term-meta">ENC: AES-256 // CLEARANCE: DECLASSIFIED</text>
-    </g>
-  </g>
-
-  <!-- Solid Hairline Divider -->
-  <line x1="20" y1="46" x2="1180" y2="46" stroke="#166534" stroke-width="1" />
-
-  <!-- ==================== STATUS PILL (SOLID FLAT) ==================== -->
-  <g transform="translate(600, 84)">
-    <rect x="-175" y="-14" width="350" height="28" rx="6" fill="#091a10" stroke="#22c55e" stroke-width="1" />
-    <circle cx="-150" cy="0" r="3.5" fill="#22c55e" />
-    <circle cx="-150" cy="0" r="7" fill="none" stroke="#22c55e" stroke-width="1" class="beacon" />
-    <text x="10" y="4" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11px" font-weight="700" letter-spacing="1.5px" fill="#86efac">
-      OPERATIONAL PROFILE // LEVEL-01 READY
+  <!-- Top Apple Status Pill Bar -->
+  <g class="gsap-pill" transform="translate(600, 48)">
+    <rect x="-160" y="-14" width="320" height="28" rx="14" fill="#161618" stroke="#333336" stroke-width="1" />
+    <circle cx="-136" cy="0" r="3.5" fill="#f5f5f7" />
+    <circle cx="-136" cy="0" r="7" fill="none" stroke="#86868b" stroke-width="1" class="apple-pulse" />
+    <text x="12" y="4" text-anchor="middle" class="apple-eyebrow">
+      SYSTEMS &amp; DEFENSE INTELLIGENCE
     </text>
   </g>
 
-  <!-- ==================== MAIN CALLSIGN & NAME ==================== -->
-  <text x="600" y="152" text-anchor="middle" class="title-main">
-    M TEJAS <tspan class="title-highlight">YADAV</tspan>
-  </text>
-
-  <!-- Subtitle / Mission Directive -->
-  <text x="600" y="188" text-anchor="middle" class="subtitle">
-    Offensive Cybersecurity (VAPT) · Cloud-Native AI Telemetry · Indian Army TGC Aspirant
-  </text>
-
-  <!-- Tactical Crosshair Separator -->
-  <g transform="translate(600, 218)">
-    <line x1="-380" y1="0" x2="-30" y2="0" stroke="#166534" stroke-width="1" />
-    <text x="0" y="4" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11px" fill="#4ade80" letter-spacing="2px">
-      [ SYS.ID: TGC-CYBER-OPS ]
+  <!-- Main Headline (Apple Keynote Style) -->
+  <g class="gsap-hero">
+    <text x="600" y="126" text-anchor="middle" class="apple-headline">
+      M Tejas Yadav <tspan class="apple-headline-silver">/ tejassxo</tspan>
     </text>
-    <line x1="30" y1="0" x2="380" y2="0" stroke="#166534" stroke-width="1" />
+
+    <!-- Subheadline -->
+    <text x="600" y="162" text-anchor="middle" class="apple-subhead">
+      Offensive Cybersecurity (VAPT) · Cloud-Native AI Telemetry · Indian Army TGC Aspirant
+    </text>
   </g>
 
-  <!-- ==================== 3 SOLID HUD TELEMETRY MODULES ==================== -->
-  <g transform="translate(600, 280)">
-    <!-- MODULE 01: ACADEMICS & TRAJECTORY -->
-    <g transform="translate(-380, 0)">
-      <rect x="-10" y="-28" width="240" height="52" rx="6" fill="#09140e" stroke="#166534" stroke-width="1" />
-      <text x="8" y="-10" class="card-label">01 // TRAJECTORY &amp; CORPS</text>
-      <text x="8" y="12" class="card-value">Indian Army TGC (Signals)</text>
+  <!-- Hairline Divider -->
+  <line x1="220" y1="196" x2="980" y2="196" stroke="#242426" stroke-width="1" />
+
+  <!-- ==================== APPLE BENTO TELEMETRY TILES ==================== -->
+  <g transform="translate(600, 260)">
+    <!-- TILE 01: TRAJECTORY -->
+    <g class="gsap-card-1" transform="translate(-370, 0)">
+      <rect x="-10" y="-36" width="234" height="68" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
+      <text x="14" y="-14" class="bento-label">TRAJECTORY &amp; CORPS</text>
+      <text x="14" y="12" class="bento-value">Indian Army TGC (Signals)</text>
     </g>
 
-    <!-- MODULE 02: SPECIALIZATION -->
-    <g transform="translate(-110, 0)">
-      <rect x="-10" y="-28" width="240" height="52" rx="6" fill="#09140e" stroke="#166534" stroke-width="1" />
-      <text x="8" y="-10" class="card-label">02 // RESEARCH &amp; VAPT</text>
-      <text x="8" y="12" class="card-value">Offensive VAPT &amp; OSINT</text>
+    <!-- TILE 02: RESEARCH & VAPT -->
+    <g class="gsap-card-2" transform="translate(-107, 0)">
+      <rect x="-10" y="-36" width="234" height="68" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
+      <text x="14" y="-14" class="bento-label">RESEARCH &amp; VAPT</text>
+      <text x="14" y="12" class="bento-value">Offensive VAPT &amp; OSINT</text>
     </g>
 
-    <!-- MODULE 03: CLOUD & AI -->
-    <g transform="translate(160, 0)">
-      <rect x="-10" y="-28" width="240" height="52" rx="6" fill="#09140e" stroke="#166534" stroke-width="1" />
-      <text x="8" y="-10" class="card-label">03 // SYSTEMS &amp; TELEMETRY</text>
-      <text x="8" y="12" class="card-value">Cloud-Native AI Telemetry</text>
+    <!-- TILE 03: CLOUD & SYSTEMS -->
+    <g class="gsap-card-3" transform="translate(156, 0)">
+      <rect x="-10" y="-36" width="234" height="68" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
+      <text x="14" y="-14" class="bento-label">SYSTEMS &amp; TELEMETRY</text>
+      <text x="14" y="12" class="bento-value">Cloud-Native AI Telemetry</text>
     </g>
   </g>
 </svg>
