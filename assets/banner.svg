@@ -178,7 +178,7 @@
       <rect x="60" y="255" width="252" height="88" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
       <circle cx="80" cy="277" r="3" fill="#f5f5f7" />
       <circle cx="80" cy="277" r="6" fill="none" stroke="#86868b" stroke-width="1" class="beacon" />
-      <text x="96" y="281" class="bento-label">01 // TRAJECTORY &amp; CORPS</text>
+      <text x="96" y="281" class="bento-label">01 · TRAJECTORY &amp; CORPS</text>
       <text x="80" y="306" class="bento-val">Indian Army TGC</text>
       <text x="80" y="326" class="bento-sub">Corps of Signals / Defense Intel</text>
     </g>
@@ -188,7 +188,7 @@
       <rect x="336" y="255" width="252" height="88" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
       <circle cx="356" cy="277" r="3" fill="#f5f5f7" />
       <circle cx="356" cy="277" r="6" fill="none" stroke="#86868b" stroke-width="1" class="beacon" />
-      <text x="372" y="281" class="bento-label">02 // RESEARCH &amp; VAPT</text>
+      <text x="372" y="281" class="bento-label">02 · RESEARCH &amp; VAPT</text>
       <text x="356" y="306" class="bento-val">Offensive VAPT &amp; OSINT</text>
       <text x="356" y="326" class="bento-sub">HackersGurukul (CRAI Mentored)</text>
     </g>
@@ -198,7 +198,7 @@
       <rect x="612" y="255" width="252" height="88" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
       <circle cx="632" cy="277" r="3" fill="#f5f5f7" />
       <circle cx="632" cy="277" r="6" fill="none" stroke="#86868b" stroke-width="1" class="beacon" />
-      <text x="648" y="281" class="bento-label">03 // CLOUD &amp; SYSTEMS</text>
+      <text x="648" y="281" class="bento-label">03 · CLOUD &amp; SYSTEMS</text>
       <text x="632" y="306" class="bento-val">Real-Time Biometrics</text>
       <text x="632" y="326" class="bento-sub">CoreDefender AI (US) · AWS IoT</text>
     </g>
@@ -208,7 +208,7 @@
       <rect x="888" y="255" width="252" height="88" rx="14" fill="#121214" stroke="#2c2c2e" stroke-width="1" />
       <circle cx="908" cy="277" r="3" fill="#f5f5f7" />
       <circle cx="908" cy="277" r="6" fill="none" stroke="#86868b" stroke-width="1" class="beacon" />
-      <text x="924" y="281" class="bento-label">04 // DISCIPLINE &amp; DEGREE</text>
+      <text x="924" y="281" class="bento-label">04 · DISCIPLINE &amp; DEGREE</text>
       <text x="908" y="306" class="bento-val">B.Tech CSE (AI &amp; ML)</text>
       <text x="908" y="326" class="bento-sub">Pre-Final Year Engineering</text>
     </g>

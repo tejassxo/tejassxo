@@ -115,7 +115,7 @@
   <g transform="translate(36, 32)">
     <circle cx="6" cy="6" r="3" fill="#f5f5f7" />
     <circle cx="6" cy="6" r="6" fill="none" stroke="#86868b" stroke-width="1" class="beacon" />
-    <text x="20" y="10" class="hud-label">QUADRANT 01 // OFFENSIVE VAPT</text>
+    <text x="20" y="10" class="hud-label">QUADRANT 01 · OFFENSIVE VAPT</text>
     <text x="0" y="32" class="hud-title">Vulnerability Assessment &amp; OSINT</text>
     <text x="0" y="52" class="hud-text">Web application auditing, reconnaissance vectors &amp; PTES standards.</text>
     <rect x="0" y="66" width="220" height="22" rx="6" fill="#141416" stroke="#2c2c2e" stroke-width="0.8" />
@@ -126,7 +126,7 @@
   <g transform="translate(730, 32)">
     <circle cx="6" cy="6" r="3" fill="#f5f5f7" />
     <circle cx="6" cy="6" r="6" fill="none" stroke="#86868b" stroke-width="1" class="beacon" />
-    <text x="20" y="10" class="hud-label">QUADRANT 02 // DEFENSE DOCTRINE</text>
+    <text x="20" y="10" class="hud-label">QUADRANT 02 · DEFENSE DOCTRINE</text>
     <text x="0" y="32" class="hud-title">Indian Army TGC (Corps of Signals)</text>
     <text x="0" y="52" class="hud-text">Commissioning trajectory for cyber operations &amp; defense intelligence.</text>
     <rect x="0" y="66" width="220" height="22" rx="6" fill="#141416" stroke="#2c2c2e" stroke-width="0.8" />
@@ -137,7 +137,7 @@
   <g transform="translate(36, 178)">
     <circle cx="6" cy="6" r="3" fill="#f5f5f7" />
     <circle cx="6" cy="6" r="6" fill="none" stroke="#86868b" stroke-width="1" class="beacon" />
-    <text x="20" y="10" class="hud-label">QUADRANT 03 // REAL-TIME TELEMETRY</text>
+    <text x="20" y="10" class="hud-label">QUADRANT 03 · REAL-TIME TELEMETRY</text>
     <text x="0" y="32" class="hud-title">Biometric Stream &amp; Cloud Telemetry</text>
     <text x="0" y="52" class="hud-text">Serverless ingestion pipelines for wearable biometrics on AWS.</text>
     <rect x="0" y="66" width="220" height="22" rx="6" fill="#141416" stroke="#2c2c2e" stroke-width="0.8" />
@@ -148,7 +148,7 @@
   <g transform="translate(730, 178)">
     <circle cx="6" cy="6" r="3" fill="#f5f5f7" />
     <circle cx="6" cy="6" r="6" fill="none" stroke="#86868b" stroke-width="1" class="beacon" />
-    <text x="20" y="10" class="hud-label">QUADRANT 04 // SYSTEMS &amp; CREATIVE TECH</text>
+    <text x="20" y="10" class="hud-label">QUADRANT 04 · SYSTEMS &amp; CREATIVE TECH</text>
     <text x="0" y="32" class="hud-title">WebGL Physics &amp; GSAP Choreography</text>
     <text x="0" y="52" class="hud-text">Interactive engineering studio with Three.js motion choreography.</text>
     <rect x="0" y="66" width="220" height="22" rx="6" fill="#141416" stroke="#2c2c2e" stroke-width="0.8" />

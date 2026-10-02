@@ -35,12 +35,12 @@
 
 <br>
 
-### Operational Profile // Executive Directive
+### Operational Profile — Executive Directive
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h4>01 // Defense Trajectory &amp; Commissioning</h4>
+      <h4>01 · Defense Trajectory &amp; Commissioning</h4>
       <p><b>Indian Army Technical Graduate Course (TGC)</b></p>
       <ul>
         <li><b>Target Branch:</b> Corps of Signals / Defence Cyber Agency (DCA)</li>
@@ -50,7 +50,7 @@
       <p><sub><code>Signals Intelligence</code> · <code>Cyber Defense</code> · <code>Systems Hardening</code></sub></p>
     </td>
     <td width="50%" valign="top">
-      <h4>02 // Offensive Security &amp; VAPT</h4>
+      <h4>02 · Offensive Security &amp; VAPT</h4>
       <p><b>Applied Adversarial Research &amp; Penetration Testing</b></p>
       <ul>
         <li><b>Methodology:</b> PTES Standards &amp; OWASP Top 10 Verification</li>
@@ -62,7 +62,7 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h4>03 // Cloud-Native AI &amp; Telemetry</h4>
+      <h4>03 · Cloud-Native AI &amp; Telemetry</h4>
       <p><b>Serverless Biometrics &amp; Edge Ingestion</b></p>
       <ul>
         <li><b>Core System:</b> Real-time Health Telemetry Streaming (US Wearables)</li>
@@ -72,7 +72,7 @@
       <p><sub><code>React</code> · <code>TypeScript</code> · <code>AWS Serverless</code> · <code>Cloud Telemetry</code></sub></p>
     </td>
     <td width="50%" valign="top">
-      <h4>04 // Systems Architecture &amp; Creative Tech</h4>
+      <h4>04 · Systems Architecture &amp; Creative Tech</h4>
       <p><b>Full-Stack Engineering &amp; Motion Choreography</b></p>
       <ul>
         <li><b>Creative Tech:</b> Three.js (WebGL), GSAP Physics, Fluid Animations</li>
@@ -319,6 +319,6 @@
 ---
 
 <div align="center">
-  <sub><code>[ TRANSMISSION TERMINATED // SECURE LINE // LEVEL-01 VERIFIED ]</code></sub><br>
+  <sub><code>[ TRANSMISSION TERMINATED · SECURE LINE · LEVEL-01 VERIFIED ]</code></sub><br>
   <sub>Architecting sovereign cyber intelligence systems for defense and critical infrastructure.</sub>
 </div>
